@@ -406,22 +406,22 @@ selecthalogen.addEventListener("mouseout", () => {
     });
 });
 //Noble gass.......................................
-const selectnobalgas = document.querySelector(".noble-gases");
+const selectnoblegas = document.querySelector(".noble-gases");
 
-selectnobalgas.addEventListener("mousemove", () => {
+selectnoblegas.addEventListener("mousemove", () => {
 
     var allElements = document.querySelectorAll(".element");
 
 
      allElements.forEach((element) => {
           element.style.opacity = 0.3;
-          selecthalogen.style.opacity= 1;
+          selectnoblegas.style.opacity= 1;
 
 
     });
 
-    var noblegass= document.querySelectorAll(".noble-gas-item");
-    noblegass.forEach((element) => {
+    var noblegas= document.querySelectorAll(".noble-gas-item");
+    noblegas.forEach((element) => {
         element.style.opacity = 1;
         element.style.transform= "scale(1.05)";
         element.style.boxShadow="0 0 20px #9ecaed";
@@ -434,15 +434,15 @@ selectnobalgas.addEventListener("mousemove", () => {
 
 
 //for mouseout
-selectnobalgas.addEventListener("mouseout", () => {
+selectnoblegas.addEventListener("mouseout", () => {
     let allElements = document.querySelectorAll(".element");
 
     allElements.forEach((element) => {
         element.style.opacity = 1;
     });
 
-    var noblegass= document.querySelectorAll(".noble-gas-item");
-    noblegass.forEach((element) => {
+    var noblegas= document.querySelectorAll(".noble-gasitem");
+    noblegas.forEach((element) => {
 
         element.style.transform= "scale(1)";
 
